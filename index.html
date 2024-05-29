@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <div>
+        <h1>Landscape</h1>
+        <a onclick="hex()">Colours to Clipboard</a>
+        <!-- <a onclick="pause()">Pause</a> -->
+        <h2 onclick="h2()">Prefrences</h2>
+    </div>
+    <ul id="box">
+        <li>
+            <h3>Palette</h3>
+            <ul class="sub">
+                <li id="p0">A</li>
+                <li id="p1">B</li>
+                <li id="p2">C</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Speed</h3>
+            <ul class="sub">
+                <li id="s0">1</li>
+                <li id="s1">2</li>
+                <li id="s2">3</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Uniform</h3>
+            <ul class="sub">
+                <li onclick="location.reload()" id="u0">ON</li>
+                <li id="u1">OFF</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Diagonal</h3>
+            <ul class="sub">
+                <li onclick="location.reload()" id="d0">Off</li>
+                <li id="d1">On</li>
+            </ul>
+        </li>
+    </ul>
+    <main>
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>
